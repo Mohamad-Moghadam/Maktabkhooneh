@@ -3,6 +3,6 @@ from landings.views import landings, selected_roadmap
 
 urlpatterns = [
     path('', landings),
-    path('roadmaps', selected_roadmap),
-    
+    path('roadmaps/<str:topic>', selected_roadmap),
+
 ]
